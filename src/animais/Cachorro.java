@@ -3,6 +3,7 @@ package animais;
 public class Cachorro {
 
    //atributos
+   static int NumeroCachorros;
    private String nome;
    private String cor;
    private int altura;
@@ -10,6 +11,10 @@ public class Cachorro {
    private int tamanhoRabo;
 
    private String estadoEspirito;
+
+
+
+
 
 
    //construtor padrao
@@ -23,10 +28,21 @@ public class Cachorro {
       this.peso = peso;
       this.tamanhoRabo = tamanhoRabo;
       this.estadoEspirito = estadoEspirito;
+
+      NumeroCachorros ++;
    }
 
 
    //metodos
+
+
+   public static int getNumeroCachorros() {
+      return NumeroCachorros;
+   }
+
+   public static void setNumeroCachorros(int numeroCachorros) {
+      Cachorro.NumeroCachorros = numeroCachorros;
+   }
 
    public String getNome() {
       return nome;
@@ -110,5 +126,10 @@ public class Cachorro {
 
    }
 
-
+   @Override
+   public String toString() {
+      return "Cachorro{" +
+              "nome='" + nome + '\'' +
+              '}';
+   }
 }

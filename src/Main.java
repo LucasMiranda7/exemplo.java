@@ -25,11 +25,18 @@ public class Main {
         //Inicio do Project
 
          //construtor padrao
-            Cachorro cachorro1 = new Cachorro();
-            Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5,5, "nada" );
+        Cachorro cachorro1 = new Cachorro("Rex", "Marrom", 25, 5.5,5, "nada" );
 
-        System.out.println(cachorro2.getNome());
-        System.out.println(cachorro2.getPeso());
+        System.out.println(cachorro1.getNumeroCachorros());
+
+        Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5,5, "nada" );
+
+        System.out.println(cachorro2.getNumeroCachorros());
+        System.out.println(cachorro1.getNumeroCachorros());
+
+        System.out.println(cachorro1.toString());
+        System.out.println(cachorro2.toString());
+
 
 
 
