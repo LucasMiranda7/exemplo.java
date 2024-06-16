@@ -1,4 +1,6 @@
 import animais.Cachorro;
+import animais.gatinho;
+import animais.passaro;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -27,21 +29,16 @@ public class Main {
          //construtor padrao
         Cachorro cachorro1 = new Cachorro("Rex", "Marrom", 25, 5.5,5, "nada" );
 
-        System.out.println(cachorro1.getNumeroCachorros());
+        gatinho gato1 = new gatinho("Felix", "Preto", 4.5 );
 
-        Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5,5, "nada" );
+        passaro passaro1 = new passaro("Frajola", "Azul", 0.5);
 
-        System.out.println(cachorro2.getNumeroCachorros());
-        System.out.println(cachorro1.getNumeroCachorros());
-
-        System.out.println(cachorro1.toString());
-        System.out.println(cachorro2.toString());
+        cachorro1.soar();
+        gato1.soar();
+        passaro1.soar();
 
 
 
-
-          cachorro1.latir();
-          cachorro1.pegar();
           System.out.println("O cachorro pegou a " + cachorro1.pegar());
 
           System.out.println("O cachorro está" + cachorro1.interagir( "carinho"));
@@ -49,6 +46,7 @@ public class Main {
           System.out.println("O cachorro está" + cachorro1.interagir(" nada"));
 
         }
+
 
 
     }
