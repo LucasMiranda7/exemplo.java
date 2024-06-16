@@ -1,3 +1,4 @@
+import Lojas.Petshop;
 import animais.Cachorro;
 import animais.gatinho;
 import animais.passaro;
@@ -27,16 +28,14 @@ public class Main {
         //Inicio do Project
 
          //construtor padrao
-        Cachorro cachorro1 = new Cachorro("Rex", "Marrom", 25, 5.5,5, "nada" );
+        Cachorro cachorro1 = new Cachorro("Rex", "Branco", 10, 10, 5, "nada");
+        gatinho gato1 = new gatinho("Felix", "Preto", 4.5);
+        passaro passaro1 = new passaro("Frajola", "Marrom", 0.5);
 
-        gatinho gato1 = new gatinho("Felix", "Preto", 4.5 );
-
-        passaro passaro1 = new passaro("Frajola", "Azul", 0.5);
 
         cachorro1.soar();
         gato1.soar();
         passaro1.soar();
-
 
 
           System.out.println("O cachorro pegou a " + cachorro1.pegar());

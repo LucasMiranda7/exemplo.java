@@ -8,6 +8,11 @@ public class gatinho extends Animal {
         super(nome, cor, peso);
     }
 
+    @Override
+    public void soar() {
+        System.out.println("Miau Miau!");
+    }
+
 
     @Override
     public String toString() {
